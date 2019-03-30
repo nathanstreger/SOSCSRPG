@@ -1,0 +1,11 @@
+D:\Windows VS Projects\SOSCSRPG\Player\bin\Debug\netstandard2.0\Engine.deps.json
+D:\Windows VS Projects\SOSCSRPG\Player\bin\Debug\netstandard2.0\Engine.dll
+D:\Windows VS Projects\SOSCSRPG\Player\bin\Debug\netstandard2.0\Engine.pdb
+D:\Windows VS Projects\SOSCSRPG\Player\obj\Debug\netstandard2.0\Engine.csprojAssemblyReference.cache
+D:\Windows VS Projects\SOSCSRPG\Player\obj\Debug\netstandard2.0\Engine.csproj.CoreCompileInputs.cache
+D:\Windows VS Projects\SOSCSRPG\Player\obj\Debug\netstandard2.0\Engine.AssemblyInfoInputs.cache
+D:\Windows VS Projects\SOSCSRPG\Player\obj\Debug\netstandard2.0\Engine.AssemblyInfo.cs
+D:\Windows VS Projects\SOSCSRPG\Player\obj\Debug\netstandard2.0\Engine.dll
+D:\Windows VS Projects\SOSCSRPG\Player\obj\Debug\netstandard2.0\Engine.pdb
+D:\Windows VS Projects\SOSCSRPG\Player\bin\Debug\netstandard2.0\GameData\GameItems.xml
+D:\Windows VS Projects\SOSCSRPG\Player\bin\Debug\netstandard2.0\GameData\Locations.xml
