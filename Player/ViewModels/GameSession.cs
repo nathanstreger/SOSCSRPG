@@ -28,8 +28,8 @@ namespace Engine.ViewModels
                 {
                     _currentPlayer.OnActionPerformed -= OnCurrentPlayerPerformedAction;
                     _currentPlayer.OnLeveledUp -= OnCurrentPlayerLeveledUp;
+                    //_currentPlayer.OnCanLevelUp -= OnCurrentPlayerCanLevelUp;
                     _currentPlayer.OnKilled -= OnCurrentPlayerKilled;
-                    //_currentPlayer.CurrentSkill.OnSkillLeveledUp -= OnCurrentPlayerSkillLeveledUp;
                 }
 
                 _currentPlayer = value;
@@ -38,8 +38,8 @@ namespace Engine.ViewModels
                 {
                     _currentPlayer.OnActionPerformed += OnCurrentPlayerPerformedAction;
                     _currentPlayer.OnLeveledUp += OnCurrentPlayerLeveledUp;
+                    //_currentPlayer.OnCanLevelUp += OnCurrentPlayerCanLevelUp;
                     _currentPlayer.OnKilled += OnCurrentPlayerKilled;
-                    //_currentPlayer.CurrentSkill.OnSkillLeveledUp += OnCurrentPlayerSkillLeveledUp;
                 }
             }
         }
@@ -394,9 +394,9 @@ namespace Engine.ViewModels
             RaiseMessage($"You are now level {CurrentPlayer.Level}!");
         }
 
-        private void OnCurrentPlayerSkillLeveledUp(object sender, System.EventArgs eventArgs)
+        private void OnCurrentPlayerCanLevelUp(object sender, System.EventArgs eventArgs)
         {
-            RaiseMessage($"{CurrentPlayer.CurrentSkill.Name} is now level {CurrentPlayer.CurrentSkill.Level}!");
+            RaiseMessage("You have enough experience to level up!");
         }
 
         private void RaiseMessage(string message)

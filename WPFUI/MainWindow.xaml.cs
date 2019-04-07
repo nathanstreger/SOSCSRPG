@@ -82,6 +82,16 @@ namespace WPFUI
             tradeScreen.ShowDialog();
         }
 
+        private void OnClick_DisplayLevelUpScreen(object sender, RoutedEventArgs e)
+        {
+            LevelUpScreen levelUpScreen = new LevelUpScreen
+            {
+                Owner = this,
+                DataContext = _gameSession
+            };
+            levelUpScreen.ShowDialog();
+        }
+
         private void OnClick_UseCurrentSkill(object sender, RoutedEventArgs e)
         {
             _gameSession.UseCurrentSkill();

@@ -117,9 +117,9 @@ namespace Engine.Models
             {
                 MinimumDamage += DamageScalingOnLevelUp;
                 MaximumDamage += DamageScalingOnLevelUp;
-
-                OnSkillLeveledUp?.Invoke(this, System.EventArgs.Empty);
             }
+
+            OnSkillLeveledUp?.Invoke(this, System.EventArgs.Empty);
         }
 
         public void PerformAction(LivingEntity actor, LivingEntity target)

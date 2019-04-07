@@ -128,3 +128,5 @@ D:\Windows VS Projects\SOSCSRPG\WPFUI\bin\Debug\Images\Locations\SpiderForest.pn
 D:\Windows VS Projects\SOSCSRPG\WPFUI\bin\Debug\Images\Locations\TownGate.png
 D:\Windows VS Projects\SOSCSRPG\WPFUI\bin\Debug\Images\Locations\TownSquare.png
 D:\Windows VS Projects\SOSCSRPG\WPFUI\bin\Debug\Images\Locations\Trader.png
+D:\Windows VS Projects\SOSCSRPG\WPFUI\obj\Debug\LevelUpScreen.baml
+D:\Windows VS Projects\SOSCSRPG\WPFUI\obj\Debug\LevelUpScreen.g.cs

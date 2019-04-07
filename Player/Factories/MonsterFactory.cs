@@ -13,7 +13,7 @@ namespace Engine.Factories
                     Monster snake =
                         new Monster("Snake", "Snake.png", 4, 4,
                         10, 10, 10, 10, 10, 10,
-                        5, 1)
+                        50, 1)
                         {
                             CurrentWeapon = ItemFactory.CreateGameItem(1501)
                         };

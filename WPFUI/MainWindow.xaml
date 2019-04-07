@@ -44,6 +44,7 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
 
             </Grid.RowDefinitions>
 
@@ -76,6 +77,11 @@
             <Label Grid.Row="10" Grid.Column="1" Content="{Binding CurrentPlayer.Wisdom}"/>
             <Label Grid.Row="11" Grid.Column="0" Content="LUCK:"/>
             <Label Grid.Row="11" Grid.Column="1" Content="{Binding CurrentPlayer.Luck}"/>
+
+            <Button Grid.Row="12" Grid.Column="1"
+                    Visibility="{Binding CurrentPlayer.CanLevel, Converter={StaticResource BooleanToVisibility}}"
+                    Content="Level Up"
+                    Click="OnClick_DisplayLevelUpScreen"/>
 
         </Grid>
 
