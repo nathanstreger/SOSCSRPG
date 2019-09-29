@@ -5,10 +5,10 @@ In order to run this on a clone in Visual Studios, it must on a Window's operati
 
 Here is a list of my contributions to the tutorials provided by Scott Lilly:
 
-1. Reformatted the UI to display a 9X9 map of the surrounding area. Currently, the player is located in the center square, although no graphic is displayed for the user to see that.
+1. Reformatted the UI to display a 9X9 map of the surrounding area. Current total map size is 20X20. Currently, the player is located in the center square of the displayed 9X9 grid, although no graphic is displayed for the user to see that.
 
-2. Added attributes of strength, intelligence, etc. to the character. Intelligence affects how quickly skill level increases. Constitution increases hit points. Currently no uses for the other attributes are implemented, but that will come at a later time.
+2. Added the Skill class and the SkillFactory class, which is used to instantiate the skills that the player learns at the start of the game. Added a feature that allows the player's skill level to increase, thereby increasing the damage of the skill as the player gets better at using it. Displays the level of the skill, and its minimum and maximum damage on the UI.
 
-3. Added the Skill class and the SkillFactory class, which is used to instantiate the skills that the player learns at the start of the game. Added a feature that allows the player's skill level to increase, thereby increasing the damage of the skill as the player gets better at using it. Displays the level of the skill, and its minimum and maximum damage on the UI.
+3. Added attributes of strength, intelligence, etc. to the character. Intelligence affects how quickly skill level increases. Constitution increases hit points. Currently no uses for the other attributes are implemented, but that will come at a later time.
   
 4. Modified the level-up process. User can now choose when to level up instead of it happening automatically. Created a new window for assigning attribute points upon leveling up.
