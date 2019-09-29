@@ -6,8 +6,8 @@ namespace Engine.Actions
     public class AttackWithWeapon : BaseAction, IAction
     {
         private readonly GameItem _weapon;
-        private readonly int _minimumDamage;
-        private readonly int _maximumDamage;
+        public readonly int _minimumDamage;
+        public readonly int _maximumDamage;
 
         public AttackWithWeapon(GameItem itemInUse, int minimumDamage, int maximumDamage)
             :base(itemInUse)

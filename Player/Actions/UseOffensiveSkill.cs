@@ -30,7 +30,7 @@ namespace Engine.Actions
             string actorName = (actor is Player) ? "You" : $"The {actor.Name.ToLower()}";
             string targetName = (target is Player) ? "You" : $"the {target.Name.ToLower()}";
 
-            _skill.AddExperience(10); //change this to be something that updates over time somehow.
+            _skill.AddExperience(actor.Intelligence); //adds skill experience based on intelligence
             
             if (damage == 0)
             {

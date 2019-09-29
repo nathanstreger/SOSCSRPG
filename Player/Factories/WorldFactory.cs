@@ -1,100 +1,70 @@
-﻿using System.IO;
-using System.Xml;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using Engine.Models;
-using Engine.Shared;
 
 namespace Engine.Factories
 {
-    internal static class WorldFactory
+    internal class WorldFactory
     {
-        private const string GAME_DATA_FILENAME = ".\\GameData\\Locations.xml";
-
         internal static World CreateWorld()
         {
-            World world = new World();
+            World newWorld = new World();
 
-            if (File.Exists(GAME_DATA_FILENAME))
+            for (int i = 0; i<=19; i++)
             {
-                XmlDocument data = new XmlDocument();
-                data.LoadXml(File.ReadAllText(GAME_DATA_FILENAME));
-
-                string rootImagePath =
-                    data.SelectSingleNode("/Locations")
-                        .AttributeAsString("RootImagePath");
-
-                LoadLocationsFromNodes(world,
-                                       rootImagePath,
-                                       data.SelectNodes("/Locations/Location"));
+                for (int j = 0; j<=19; j++)
+                {
+                    newWorld.AddLocation(i, j, "Grasslands", "/WPFUI;component/Images/Locations/25Grassland.png");
+                }
             }
-            else
-            {
-                throw new FileNotFoundException($"Missing data file: {GAME_DATA_FILENAME}");
-            }
+            //Farmer's Field
+            newWorld.LocationAt(4, 3).ImageName = "/WPFUI;component/Images/Locations/FarmFields.png";
+            newWorld.LocationAt(4, 3).Name = "Farmer's Field";
+            newWorld.LocationAt(4, 3).AddMonster(2, 95);
+            newWorld.LocationAt(4, 3).AddMonster(5, 5);
 
-            return world;
-        }
+            //Farmer's House
+            newWorld.LocationAt(5, 3).ImageName = "/WPFUI;component/Images/Locations/Farmhouse.png";
+            newWorld.LocationAt(5, 3).Name = "Farmer's House";
+            newWorld.LocationAt(5, 3).AddQuest(2);
 
-        private static void LoadLocationsFromNodes(World world, string rootImagePath, XmlNodeList nodes)
-        {
-            if (nodes == null)
-            {
-                return;
-            }
+            //Home
+            newWorld.LocationAt(5, 5).ImageName = "/WPFUI;component/Images/Locations/Home.png";
+            newWorld.LocationAt(5, 5).Name = "Home";
 
-            foreach (XmlNode node in nodes)
-            {
-                Location location =
-                    new Location(node.AttributeAsInt("X"),
-                                 node.AttributeAsInt("Y"),
-                                 node.AttributeAsString("Name"),
-                                 node.SelectSingleNode("./Description")?.InnerText ?? "",
-                                 $".{rootImagePath}{node.AttributeAsString("ImageName")}");
+            //Trading Shop
+            newWorld.LocationAt(4, 6).ImageName = "/WPFUI;component/Images/Locations/Trader.png";
+            newWorld.LocationAt(4, 6).Name = "Trader's Shop";
 
-                AddMonsters(location, node.SelectNodes("./Monsters/Monster"));
-                AddQuests(location, node.SelectNodes("./Quests/Quest"));
-                AddTrader(location, node.SelectSingleNode("./Trader"));
+            //Town Square
+            newWorld.LocationAt(5, 6).ImageName = "/WPFUI;component/Images/Locations/TownSquare.png";
+            newWorld.LocationAt(5, 6).Name = "Town Square";
 
-                world.AddLocation(location);
-            }
-        }
+            //Town Gate
+            newWorld.LocationAt(6, 6).ImageName = "/WPFUI;component/Images/Locations/TownGate.png";
+            newWorld.LocationAt(6, 6).Name = "Town Gate";
 
-        private static void AddMonsters(Location location, XmlNodeList monsters)
-        {
-            if (monsters == null)
-            {
-                return;
-            }
+            //Spider Forest
+            newWorld.LocationAt(8, 6).ImageName = "/WPFUI;component/Images/Locations/SpiderForest.png";
+            newWorld.LocationAt(8, 6).Name = "Spider Forest";
+            newWorld.LocationAt(8, 6).AddMonster(3, 90);
+            newWorld.LocationAt(8, 6).AddMonster(6, 10);
 
-            foreach (XmlNode monsterNode in monsters)
-            {
-                location.AddMonster(monsterNode.AttributeAsInt("ID"),
-                                    monsterNode.AttributeAsInt("Percent"));
-            }
-        }
+            //Herbalist's Hut
+            newWorld.LocationAt(5, 7).ImageName = "/WPFUI;component/Images/Locations/HerbalistsHut.png";
+            newWorld.LocationAt(5, 7).Name = "Herbalist's Hut";
+            newWorld.LocationAt(5, 7).AddQuest(1);
 
-        private static void AddQuests(Location location, XmlNodeList quests)
-        {
-            if (quests == null)
-            {
-                return;
-            }
+            //Herbalist's Garden
+            newWorld.LocationAt(5, 8).ImageName = "/WPFUI;component/Images/Locations/HerbalistsGarden.png";
+            newWorld.LocationAt(5, 8).Name = "Herbalist's Garden";
+            newWorld.LocationAt(5, 8).AddMonster(1, 95);
+            newWorld.LocationAt(5, 8).AddMonster(4, 5);
 
-            foreach (XmlNode questNode in quests)
-            {
-                location.QuestsAvailableHere
-                        .Add(QuestFactory.GetQuestByID(questNode.AttributeAsInt("ID")));
-            }
-        }
-
-        private static void AddTrader(Location location, XmlNode traderHere)
-        {
-            if (traderHere == null)
-            {
-                return;
-            }
-
-            location.TraderHere =
-                TraderFactory.GetTraderByName(traderHere.AttributeAsString("Name"));
+            return newWorld;
         }
     }
 }

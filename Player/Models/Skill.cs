@@ -12,13 +12,13 @@ namespace Engine.Models
         private int _maximumDamage;
         private int _level;
 
-        public enum SkillType
+        public enum SkillTargetType
         {
             Offensive,
             Defensive
         }
 
-        public enum SkillCategory
+        public enum SkillAttackType
         {
             Fire,
             Ice,
@@ -29,8 +29,8 @@ namespace Engine.Models
             Dark//not sure if this one is needed.
         }
 
-        public SkillCategory Category { get; }
-        public SkillType Type { get; }
+        public SkillAttackType AttackType { get; }
+        public SkillTargetType TargetType { get; }
         public int ID { get; }
         public string Name { get; }
         public string Description { get; }
@@ -85,13 +85,13 @@ namespace Engine.Models
 
         public event EventHandler OnSkillLeveledUp;
 
-        public Skill(int id, SkillType skillType, SkillCategory category,
+        public Skill(int id, SkillTargetType targetType, SkillAttackType attackType,
             string name, string description, int minimumDamage,
             int maximumDamge, int damageScaling,
             int level = 1, IAction action = null)
         {
-            Type = skillType;
-            Category = category;
+            TargetType = targetType;
+            AttackType = attackType;
             ID = id;
             Name = name;
             Description = description;

@@ -51,4 +51,7 @@
       <Monster ID="4" Percent="5"/>
     </Monsters>
   </Location>
+  <Location X="5" Y="5" Name="Grasslands" ImageName="25Grassland.png">
+    <Description><![CDATA[I am not sure if descriptions are necessary any longer.]]></Description>    
+  </Location>
 </Locations>

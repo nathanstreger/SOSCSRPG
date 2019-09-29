@@ -8,14 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/locations/farmfields.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/locations/farmhouse.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/locations/herbalistsgarden.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/locations/herbalistshut.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/locations/home.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/locations/spiderforest.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/locations/towngate.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/locations/townsquare.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/locations/trader.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/locations/25grassland.png")]
 
 

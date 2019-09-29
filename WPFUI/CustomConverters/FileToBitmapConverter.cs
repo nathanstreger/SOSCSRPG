@@ -32,5 +32,5 @@ namespace WPFUI.CustomConverters
         {
             return null;
         }
-    }
+    } 
 }

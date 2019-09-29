@@ -12,8 +12,8 @@ namespace Engine.Factories
         static SkillFactory()
         {
             //Mana Arrow
-            Skill ManaArrow = new Skill(101, Skill.SkillType.Offensive,
-                Skill.SkillCategory.Arcane,
+            Skill ManaArrow = new Skill(101, Skill.SkillTargetType.Offensive,
+                Skill.SkillAttackType.Arcane,
                 "Mana Arrow",
                 "Shoots an arrow made of pure mana at the enemy. Higher skill levels mean you shoot more missiles," +
                 " and that the missiles do more damage.",
@@ -22,8 +22,8 @@ namespace Engine.Factories
             ManaArrow.Action = new UseOffensiveSkill(ManaArrow);
 
             //Fire Bolt
-            Skill FireBolt = new Skill(102, Skill.SkillType.Offensive,
-                Skill.SkillCategory.Fire,
+            Skill FireBolt = new Skill(102, Skill.SkillTargetType.Offensive,
+                Skill.SkillAttackType.Fire,
                 "Fire Bolt",
                 "Shoots a bolt of fire at the enemy. Higher skill levels increase the damage.",
                 3, 7, 2

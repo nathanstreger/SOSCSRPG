@@ -17,6 +17,898 @@ namespace Engine.ViewModels
         private Monster _currentMonster;
         private Trader _currentTrader;
 
+        #endregion
+
+        #region Map Variables
+
+        private Location _location_0_0;
+        private Location _location_1_0;
+        private Location _location_2_0;
+        private Location _location_3_0;
+        private Location _location_4_0;
+        private Location _location_5_0;
+        private Location _location_6_0;
+        private Location _location_7_0;
+        private Location _location_8_0;
+        private Location _location_0_1;
+        private Location _location_1_1;
+        private Location _location_2_1;
+        private Location _location_3_1;
+        private Location _location_4_1;
+        private Location _location_5_1;
+        private Location _location_6_1;
+        private Location _location_7_1;
+        private Location _location_8_1;
+        private Location _location_0_2;
+        private Location _location_1_2;
+        private Location _location_2_2;
+        private Location _location_3_2;
+        private Location _location_4_2;
+        private Location _location_5_2;
+        private Location _location_6_2;
+        private Location _location_7_2;
+        private Location _location_8_2;
+        private Location _location_0_3;
+        private Location _location_1_3;
+        private Location _location_2_3;
+        private Location _location_3_3;
+        private Location _location_4_3;
+        private Location _location_5_3;
+        private Location _location_6_3;
+        private Location _location_7_3;
+        private Location _location_8_3;
+        private Location _location_0_4;
+        private Location _location_1_4;
+        private Location _location_2_4;
+        private Location _location_3_4;
+        private Location _location_5_4;
+        private Location _location_6_4;
+        private Location _location_7_4;
+        private Location _location_8_4;
+        private Location _location_0_5;
+        private Location _location_1_5;
+        private Location _location_2_5;
+        private Location _location_3_5;
+        private Location _location_4_5;
+        private Location _location_5_5;
+        private Location _location_6_5;
+        private Location _location_7_5;
+        private Location _location_8_5;
+        private Location _location_0_6;
+        private Location _location_1_6;
+        private Location _location_2_6;
+        private Location _location_3_6;
+        private Location _location_4_6;
+        private Location _location_5_6;
+        private Location _location_6_6;
+        private Location _location_7_6;
+        private Location _location_8_6;
+        private Location _location_0_7;
+        private Location _location_1_7;
+        private Location _location_2_7;
+        private Location _location_3_7;
+        private Location _location_4_7;
+        private Location _location_5_7;
+        private Location _location_6_7;
+        private Location _location_7_7;
+        private Location _location_8_7;
+        private Location _location_0_8;
+        private Location _location_1_8;
+        private Location _location_2_8;
+        private Location _location_3_8;
+        private Location _location_4_8;
+        private Location _location_5_8;
+        private Location _location_6_8;
+        private Location _location_7_8;
+        private Location _location_8_8;
+
+        public Location Location_0_0
+        {
+            get { return _location_0_0; }
+            set
+            {
+                _location_0_0 = value;
+
+                OnPropertyChanged();
+            }
+        }
+
+        public Location Location_1_0
+        {
+            get { return _location_1_0; }
+            set
+            {
+                _location_1_0 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_2_0
+        {
+            get { return _location_2_0; }
+            set
+            {
+                _location_2_0 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_3_0
+        {
+            get { return _location_3_0; }
+            set
+            {
+                _location_3_0 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_4_0
+        {
+            get { return _location_4_0; }
+            set
+            {
+                _location_4_0 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_5_0
+        {
+            get { return _location_5_0; }
+            set
+            {
+                _location_5_0 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_6_0
+        {
+            get { return _location_6_0; }
+            set
+            {
+                _location_6_0 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_7_0
+        {
+            get { return _location_7_0; }
+            set
+            {
+                _location_7_0 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_8_0
+        {
+            get { return _location_8_0; }
+            set
+            {
+                _location_8_0 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_0_1
+        {
+            get { return _location_0_1; }
+            set
+            {
+                _location_0_1 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_1_1
+        {
+            get { return _location_1_1; }
+            set
+            {
+                _location_1_1 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_2_1
+        {
+            get { return _location_2_1; }
+            set
+            {
+                _location_2_1 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_3_1
+        {
+            get { return _location_3_1; }
+            set
+            {
+                _location_3_1 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_4_1
+        {
+            get { return _location_4_1; }
+            set
+            {
+                _location_4_1 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_5_1
+        {
+            get { return _location_5_1; }
+            set
+            {
+                _location_5_1 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_6_1
+        {
+            get { return _location_6_1; }
+            set
+            {
+                _location_6_1 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_7_1
+        {
+            get { return _location_7_1; }
+            set
+            {
+                _location_7_1 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_8_1
+        {
+            get { return _location_8_1; }
+            set
+            {
+                _location_8_1 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_0_2
+        {
+            get { return _location_0_2; }
+            set
+            {
+                _location_0_2 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_1_2
+        {
+            get { return _location_1_2; }
+            set
+            {
+                _location_1_2 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_2_2
+        {
+            get { return _location_2_2; }
+            set
+            {
+                _location_2_2 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_3_2
+        {
+            get { return _location_3_2; }
+            set
+            {
+                _location_3_2 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_4_2
+        {
+            get { return _location_4_2; }
+            set
+            {
+                _location_4_2 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_5_2
+        {
+            get { return _location_5_2; }
+            set
+            {
+                _location_5_2 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_6_2
+        {
+            get { return _location_6_2; }
+            set
+            {
+                _location_6_2 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_7_2
+        {
+            get { return _location_7_2; }
+            set
+            {
+                _location_7_2 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_8_2
+        {
+            get { return _location_8_2; }
+            set
+            {
+                _location_8_2 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_0_3
+        {
+            get { return _location_0_3; }
+            set
+            {
+                _location_0_3 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_1_3
+        {
+            get { return _location_1_3; }
+            set
+            {
+                _location_1_3 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_2_3
+        {
+            get { return _location_2_3; }
+            set
+            {
+                _location_2_3 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_3_3
+        {
+            get { return _location_3_3; }
+            set
+            {
+                _location_3_3 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_4_3
+        {
+            get { return _location_4_3; }
+            set
+            {
+                _location_4_3 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_5_3
+        {
+            get { return _location_5_3; }
+            set
+            {
+                _location_5_3 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_6_3
+        {
+            get { return _location_6_3; }
+            set
+            {
+                _location_6_3 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_7_3
+        {
+            get { return _location_7_3; }
+            set
+            {
+                _location_7_3 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_8_3
+        {
+            get { return _location_8_3; }
+            set
+            {
+                _location_8_3 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_0_4
+        {
+            get { return _location_0_4; }
+            set
+            {
+                _location_0_4 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_1_4
+        {
+            get { return _location_1_4; }
+            set
+            {
+                _location_1_4 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_2_4
+        {
+            get { return _location_2_4; }
+            set
+            {
+                _location_2_4 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_3_4
+        {
+            get { return _location_3_4; }
+            set
+            {
+                _location_3_4 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_5_4
+        {
+            get { return _location_5_4; }
+            set
+            {
+                _location_5_4 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_6_4
+        {
+            get { return _location_6_4; }
+            set
+            {
+                _location_6_4 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_7_4
+        {
+            get { return _location_7_4; }
+            set
+            {
+                _location_7_4 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_8_4
+        {
+            get { return _location_8_4; }
+            set
+            {
+                _location_8_4 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_0_5
+        {
+            get { return _location_0_5; }
+            set
+            {
+                _location_0_5 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_1_5
+        {
+            get { return _location_1_5; }
+            set
+            {
+                _location_1_5 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_2_5
+        {
+            get { return _location_2_5; }
+            set
+            {
+                _location_2_5 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_3_5
+        {
+            get { return _location_3_5; }
+            set
+            {
+                _location_3_5 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_4_5
+        {
+            get { return _location_4_5; }
+            set
+            {
+                _location_4_5 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_5_5
+        {
+            get { return _location_5_5; }
+            set
+            {
+                _location_5_5 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_6_5
+        {
+            get { return _location_6_5; }
+            set
+            {
+                _location_6_5 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_7_5
+        {
+            get { return _location_7_5; }
+            set
+            {
+                _location_7_5 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_8_5
+        {
+            get { return _location_8_5; }
+            set
+            {
+                _location_8_5 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_0_6
+        {
+            get { return _location_0_6; }
+            set
+            {
+                _location_0_6 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_1_6
+        {
+            get { return _location_1_6; }
+            set
+            {
+                _location_1_6 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_2_6
+        {
+            get { return _location_2_6; }
+            set
+            {
+                _location_2_6 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_3_6
+        {
+            get { return _location_3_6; }
+            set
+            {
+                _location_3_6 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_4_6
+        {
+            get { return _location_4_6; }
+            set
+            {
+                _location_4_6 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_5_6
+        {
+            get { return _location_5_6; }
+            set
+            {
+                _location_5_6 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_6_6
+        {
+            get { return _location_6_6; }
+            set
+            {
+                _location_6_6 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_7_6
+        {
+            get { return _location_7_6; }
+            set
+            {
+                _location_7_6 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_8_6
+        {
+            get { return _location_8_6; }
+            set
+            {
+                _location_8_6 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_0_7
+        {
+            get { return _location_0_7; }
+            set
+            {
+                _location_0_7 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_1_7
+        {
+            get { return _location_1_7; }
+            set
+            {
+                _location_1_7 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_2_7
+        {
+            get { return _location_2_7; }
+            set
+            {
+                _location_2_7 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_3_7
+        {
+            get { return _location_3_7; }
+            set
+            {
+                _location_3_7 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_4_7
+        {
+            get { return _location_4_7; }
+            set
+            {
+                _location_4_7 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_5_7
+        {
+            get { return _location_5_7; }
+            set
+            {
+                _location_5_7 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_6_7
+        {
+            get { return _location_6_7; }
+            set
+            {
+                _location_6_7 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_7_7
+        {
+            get { return _location_7_7; }
+            set
+            {
+                _location_7_7 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_8_7
+        {
+            get { return _location_8_7; }
+            set
+            {
+                _location_8_7 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_0_8
+        {
+            get { return _location_0_8; }
+            set
+            {
+                _location_0_8 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_1_8
+        {
+            get { return _location_1_8; }
+            set
+            {
+                _location_1_8 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_2_8
+        {
+            get { return _location_2_8; }
+            set
+            {
+                _location_2_8 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_3_8
+        {
+            get { return _location_3_8; }
+            set
+            {
+                _location_3_8 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_4_8
+        {
+            get { return _location_4_8; }
+            set
+            {
+                _location_4_8 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_5_8
+        {
+            get { return _location_5_8; }
+            set
+            {
+                _location_5_8 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_6_8
+        {
+            get { return _location_6_8; }
+            set
+            {
+                _location_6_8 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_7_8
+        {
+            get { return _location_7_8; }
+            set
+            {
+                _location_7_8 = value;
+
+                OnPropertyChanged();
+            }
+        }
+        public Location Location_8_8
+        {
+            get { return _location_8_8; }
+            set
+            {
+                _location_8_8 = value;
+
+                OnPropertyChanged();
+            }
+        }
+
+
+        #endregion
+
+        #region World Variables
+
         public World CurrentWorld { get; }
 
         public Player CurrentPlayer
@@ -72,6 +964,8 @@ namespace Engine.ViewModels
                 GetMonsterAtLocation();
 
                 CurrentTrader = CurrentLocation.TraderHere;
+
+                UpdateMap();
             }
         }
 
@@ -152,8 +1046,8 @@ namespace Engine.ViewModels
 
             CurrentWorld = WorldFactory.CreateWorld();
 
-            CurrentLocation = CurrentWorld.LocationAt(0, 0);
-        }
+            CurrentLocation = CurrentWorld.LocationAt(4, 4);
+        } 
 
         public void MoveNorth()
         {
@@ -332,7 +1226,7 @@ namespace Engine.ViewModels
                 RaiseMessage("You must select a skill to use.");
                 return;
             }
-            if (CurrentPlayer.CurrentSkill.Type == Skill.SkillType.Offensive)//sets target of spell.
+            if (CurrentPlayer.CurrentSkill.TargetType == Skill.SkillTargetType.Offensive)//sets target of spell.
             {
                 CurrentPlayer.UseCurrentSkillOn(CurrentMonster);
             }
@@ -351,6 +1245,92 @@ namespace Engine.ViewModels
                 CurrentMonster.UseCurrentWeaponOn(CurrentPlayer);
             }
         }
+        private void UpdateMap()
+        {
+            //I did the placement of the locations wrong. (0,0) starts in the top left corner instead of bottom left.
+            //(1,0) is the row beneath (0,0)
+            //This is the easiest place to fix it.
+            Location_0_0 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 4, CurrentLocation.YCoordinate + 4);
+            Location_1_0 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 4, CurrentLocation.YCoordinate + 3);
+            Location_2_0 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 4, CurrentLocation.YCoordinate + 2);
+            Location_3_0 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 4, CurrentLocation.YCoordinate + 1);
+            Location_4_0 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 4, CurrentLocation.YCoordinate);
+            Location_5_0 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 4, CurrentLocation.YCoordinate - 1);
+            Location_6_0 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 4, CurrentLocation.YCoordinate - 2);
+            Location_7_0 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 4, CurrentLocation.YCoordinate - 3);
+            Location_8_0 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 4, CurrentLocation.YCoordinate - 4);
+            Location_0_1 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 3, CurrentLocation.YCoordinate + 4);
+            Location_1_1 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 3, CurrentLocation.YCoordinate + 3);
+            Location_2_1 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 3, CurrentLocation.YCoordinate + 2);
+            Location_3_1 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 3, CurrentLocation.YCoordinate + 1);
+            Location_4_1 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 3, CurrentLocation.YCoordinate);
+            Location_5_1 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 3, CurrentLocation.YCoordinate - 1);
+            Location_6_1 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 3, CurrentLocation.YCoordinate - 2);
+            Location_7_1 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 3, CurrentLocation.YCoordinate - 3);
+            Location_8_1 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 3, CurrentLocation.YCoordinate - 4);
+            Location_0_2 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 2, CurrentLocation.YCoordinate + 4);
+            Location_1_2 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 2, CurrentLocation.YCoordinate + 3);
+            Location_2_2 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 2, CurrentLocation.YCoordinate + 2);
+            Location_3_2 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 2, CurrentLocation.YCoordinate + 1);
+            Location_4_2 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 2, CurrentLocation.YCoordinate);
+            Location_5_2 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 2, CurrentLocation.YCoordinate - 1);
+            Location_6_2 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 2, CurrentLocation.YCoordinate - 2);
+            Location_7_2 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 2, CurrentLocation.YCoordinate - 3);
+            Location_8_2 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 2, CurrentLocation.YCoordinate - 4);
+            Location_0_3 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 1, CurrentLocation.YCoordinate + 4);
+            Location_1_3 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 1, CurrentLocation.YCoordinate + 3);
+            Location_2_3 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 1, CurrentLocation.YCoordinate + 2);
+            Location_3_3 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 1, CurrentLocation.YCoordinate + 1);
+            Location_4_3 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 1, CurrentLocation.YCoordinate);
+            Location_5_3 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 1, CurrentLocation.YCoordinate - 1);
+            Location_6_3 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 1, CurrentLocation.YCoordinate - 2);
+            Location_7_3 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 1, CurrentLocation.YCoordinate - 3);
+            Location_8_3 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 1, CurrentLocation.YCoordinate - 4);
+            Location_0_4 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate, CurrentLocation.YCoordinate + 4);
+            Location_1_4 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate, CurrentLocation.YCoordinate + 3);
+            Location_2_4 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate, CurrentLocation.YCoordinate + 2);
+            Location_3_4 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate, CurrentLocation.YCoordinate + 1);
+            Location_5_4 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate, CurrentLocation.YCoordinate - 1);
+            Location_6_4 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate, CurrentLocation.YCoordinate - 2);
+            Location_7_4 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate, CurrentLocation.YCoordinate - 3);
+            Location_8_4 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate, CurrentLocation.YCoordinate - 4);
+            Location_0_5 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 1, CurrentLocation.YCoordinate + 4);
+            Location_1_5 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 1, CurrentLocation.YCoordinate + 3);
+            Location_2_5 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 1, CurrentLocation.YCoordinate + 2);
+            Location_3_5 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 1, CurrentLocation.YCoordinate + 1);
+            Location_4_5 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 1, CurrentLocation.YCoordinate);
+            Location_5_5 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 1, CurrentLocation.YCoordinate - 1);
+            Location_6_5 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 1, CurrentLocation.YCoordinate - 2);
+            Location_7_5 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 1, CurrentLocation.YCoordinate - 3);
+            Location_8_5 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 1, CurrentLocation.YCoordinate - 4);
+            Location_0_6 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 2, CurrentLocation.YCoordinate + 4);
+            Location_1_6 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 2, CurrentLocation.YCoordinate + 3);
+            Location_2_6 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 2, CurrentLocation.YCoordinate + 2);
+            Location_3_6 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 2, CurrentLocation.YCoordinate + 1);
+            Location_4_6 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 2, CurrentLocation.YCoordinate);
+            Location_5_6 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 2, CurrentLocation.YCoordinate - 1);
+            Location_6_6 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 2, CurrentLocation.YCoordinate - 2);
+            Location_7_6 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 2, CurrentLocation.YCoordinate - 3);
+            Location_8_6 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 2, CurrentLocation.YCoordinate - 4);
+            Location_0_7 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 3, CurrentLocation.YCoordinate + 4);
+            Location_1_7 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 3, CurrentLocation.YCoordinate + 3);
+            Location_2_7 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 3, CurrentLocation.YCoordinate + 2);
+            Location_3_7 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 3, CurrentLocation.YCoordinate + 1);
+            Location_4_7 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 3, CurrentLocation.YCoordinate);
+            Location_5_7 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 3, CurrentLocation.YCoordinate - 1);
+            Location_6_7 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 3, CurrentLocation.YCoordinate - 2);
+            Location_7_7 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 3, CurrentLocation.YCoordinate - 3);
+            Location_8_7 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 3, CurrentLocation.YCoordinate - 4);
+            Location_0_8 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 4, CurrentLocation.YCoordinate + 4);
+            Location_1_8 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 4, CurrentLocation.YCoordinate + 3);
+            Location_2_8 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 4, CurrentLocation.YCoordinate + 2);
+            Location_3_8 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 4, CurrentLocation.YCoordinate + 1);
+            Location_4_8 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 4, CurrentLocation.YCoordinate);
+            Location_5_8 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 4, CurrentLocation.YCoordinate - 1);
+            Location_6_8 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 4, CurrentLocation.YCoordinate - 2);
+            Location_7_8 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 4, CurrentLocation.YCoordinate - 3);
+            Location_8_8 = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 4, CurrentLocation.YCoordinate - 4);
+        }
 
         private void OnCurrentPlayerPerformedAction(object sender, string result)
         {
@@ -367,7 +1347,7 @@ namespace Engine.ViewModels
             RaiseMessage("");
             RaiseMessage("You have been killed.");
 
-            CurrentLocation = CurrentWorld.LocationAt(0, -1);
+            CurrentLocation = CurrentWorld.LocationAt(5, 5);
             //CurrentPlayer.CompletelyHeal(); Not needed because of the if statement in the location setter.
         }
 

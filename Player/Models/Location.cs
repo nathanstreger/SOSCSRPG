@@ -6,11 +6,10 @@ namespace Engine.Models
 {
     public class Location
     {
-        public int XCoordinate { get; }
-        public int YCoordinate { get; }
-        public string Name { get; }
-        public string Description { get; }
-        public string ImageName { get; }
+        public int XCoordinate { get; set; }
+        public int YCoordinate { get; set; }
+        public string Name { get; set; }
+        public string ImageName { get; set; }
 
         public List<Quest> QuestsAvailableHere { get; } = new List<Quest>();
 
@@ -19,12 +18,11 @@ namespace Engine.Models
 
         public Trader TraderHere { get; set; }
 
-        public Location(int xCoordinate, int yCoordinate, string name, string description, string imageName)
+        public Location(int xCoordinate, int yCoordinate, string name, string imageName)
         {
             XCoordinate = xCoordinate;
             YCoordinate = yCoordinate;
             Name = name;
-            Description = description;
             ImageName = imageName;
         }
 
@@ -75,6 +73,21 @@ namespace Engine.Models
 
             // If there was a problem, return the last monster in the list.
             return MonsterFactory.GetMonster(MonstersHere.Last().MonsterID);
+        }
+
+        public void AddQuest(int questID)
+        {
+            if (QuestsAvailableHere.Exists(q => q.ID == questID))
+            {
+                // This quest has already been added to this location.
+                // So, do nothing
+                return;
+            }
+            else
+            {
+                // This quest is not already at this location, so add it.
+                QuestsAvailableHere.Add(QuestFactory.GetQuestByID(questID));
+            }
         }
     }
 }

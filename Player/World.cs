@@ -24,5 +24,12 @@ namespace Engine.Models
             }
             return null;
         }
+
+        internal void AddLocation(int xCoordinate, int yCoordinate, string name, string imageName)
+        {
+            Location loc = new Location(xCoordinate, yCoordinate, name, imageName);
+
+            _locations.Add(loc);
+        }
     }
 }
